@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css - Practical</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <nav>
+        <h2>Helium</h2>
+        <ul>
+            <li>5G</li>
+            <li>Explorer</li>
+            <li>Ecosystem</li>
+        </ul>
+    </nav>
+
+    <h1>CSS Practical 2 - Decorate a Simple Mock-up (Thanks to "maquette_helium.png")</h1>
+
+    <main>
+        <!-- Correction= "Two divs with <class> allow for better handling the area in question (for us the side main-left)" at the bottom -->
+        <div class="main-left">
+            <div class="main-left-container">
+                <h3>People-Powered Networks</h3>
+                <h4>Start a Wireless Revolution</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sint corrupti facere asperiores aspernatur maxime omnis laudantium officia debitis soluta. Omnis alias nostrum dignissimos odit ipsum accusantium officia eum id.</p>
+            </div>
+        </div>
+        <div class="main-right">
+            <!-- Correction= "Always give a 'id' for a picture/img because easier to manipulate in CSS"  at the bottom-->
+            <img src="./img/main.png" id="modem" alt="The Wireless Revolution">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_left">
+            <h5>Core Technologies</h5>
+            <div class="btn-container">
+                <button>Tokens</button>
+                <button>Proof of coverage</button>
+                <button>LongFI</button>
+            </div>
+        </div>
+        <div class="footer_right">
+            <h5>Our investors</h5>
+            <!-- Corretion= "Same thing as main-left atop but with images" for the bottom -->
+            <div class="investor">
+                <div class="investor-container">
+                    <img src="./img/investlogo2.png" class="investors" alt="1st of our Investor">
+                    <img src="./img/investlogo3.png" class="investors" alt="2nd of our Investor">
+                    <img src="./img/investlogo4.png" class="investors" alt="3rd of our Investor">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
