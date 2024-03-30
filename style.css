@@ -10,6 +10,7 @@
 
 :root{
     --main_color: rgb(250, 250, 250);
+    --underline_color: rgb(71, 77, 255);
 }
 
 /* Info=When we want generalize of elements on our page, they must appear BEFORE the "body"!! */
@@ -24,7 +25,7 @@ p {
 body{
     /* Info=Whatever happen, the "body" must always have a min-height of 100vh*/
     min-height: 100vh;
-    background: rgb(0, 0, 0);
+    background: rgb(30, 30, 30);
     color: var(--main_color);
     overflow-x: hidden;
 }
@@ -57,8 +58,69 @@ nav > ul{
     width: 50%;
 }
 
+h3{
+    font-size: 5rem;
+}
+
+.main-left-container > h4{
+    color: var(--underline_color);
+    font-size: 1.8rem;
+}
+
 main{
     display: flex;
     justify-content: space-around;
     margin: 30px auto;
+}
+
+footer{
+    display: flex;
+    background: rgb(10, 10, 10);
+    border-radius: 10px;
+}
+
+.footer_left{
+    width: 33%;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+button{
+    border: none;
+    background: var(--underline_color);
+    color: var(--main_color);
+    width: 150px;
+    /* WARNING= padding ≠ width & height. padding="Extra distance ON TOP OF THAT original size" ≠ width/height="IT'S  original size" at the bottom */
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.footer_right{
+    width: 67%;
+}
+
+.investors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.investors-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Emergency Info=If an element doesn't take all place of his parent... Like at the bottom, have the idea of  making a width to 100% */
+    width: 100%;
+}
+
+.investors-container > img{
+    height: 60px;
 }
