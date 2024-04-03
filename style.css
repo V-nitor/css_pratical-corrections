@@ -22,6 +22,11 @@ p {
     font-size: 0.8rem;
 }
 
+h6{
+    font-size: 32px;
+    display: none;
+}
+
 body{
     /* Info=Whatever happen, the "body" must always have a min-height of 100vh*/
     min-height: 100vh;
@@ -102,6 +107,10 @@ button{
     margin: 5px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .footer_right{
     width: 67%;
 }
@@ -123,4 +132,46 @@ button{
 
 .investors-container > img{
     height: 60px;
+}
+
+/* Useful Info= When we use '(min-width:)' instead of '(max-width:)' it is named "Mobile First". It's simply the opposite to pass of the PC for Phone :) */
+@media screen and (max-width: 1019.5px){
+    
+    h1{
+        display: none;
+    }
+    
+    h6:first-of-type{
+        display: block;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+
+    .main-left-container > h3{
+        font-size: 2.5rem;
+    }
+    
+    .main-left-container > h4{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 630px){
+    
+    h6:first-of-type{
+        display: none;
+    }
+
+    h6:last-of-type{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    nav > ul{
+        width: 70%;
+    }
+
 }
